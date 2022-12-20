@@ -1,0 +1,71 @@
+Source: haskell-hxt-charproperties
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders: TANIGUCHI Takaki <takaki@debian.org>, Clint Adams <clint@debian.org>
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends: debhelper (>= 10),
+ haskell-devscripts (>= 0.13),
+ cdbs,
+ ghc (>= 8.0),
+ ghc-prof,
+Build-Depends-Indep: ghc-doc,
+Standards-Version: 4.5.0
+Homepage: https://github.com/UweSchmidt/hxt
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-hxt-charproperties
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-hxt-charproperties]
+
+Package: libghc-hxt-charproperties-dev
+Architecture: any
+Depends: ${haskell:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Provides: ${haskell:Provides},
+Description: Character properties and classes for XML and Unicode${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ Character proprties defined by XML and Unicode standards.
+ These modules contain predicates for Unicode blocks and char proprties
+ and character predicates defined by XML.
+ Supported Unicode version is 5.2.0.
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-charproperties-prof
+Architecture: any
+Depends: ${haskell:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Provides: ${haskell:Provides},
+Description: Character properties and classes for XML and Unicode${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ Character proprties defined by XML and Unicode standards.
+ These modules contain predicates for Unicode blocks and char proprties
+ and character predicates defined by XML.
+ Supported Unicode version is 5.2.0.
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-charproperties-doc
+Architecture: all
+Section: doc
+Depends: ${haskell:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Provides: ${haskell:Provides},
+Description: Character properties and classes for XML and Unicode${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ Character proprties defined by XML and Unicode standards.
+ These modules contain predicates for Unicode blocks and char proprties
+ and character predicates defined by XML.
+ Supported Unicode version is 5.2.0.
+ .
+ ${haskell:Blurb}
